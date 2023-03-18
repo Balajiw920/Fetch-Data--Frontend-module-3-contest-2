@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#fetchDataButton {
+    display: block;
+    padding: 7px 15px;
+    margin: 10px auto;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#fetchDataButton:hover {
+    background-color: red;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: table-appear 1s ease-in-out;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+table td {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+table td:first-child {
+    text-align: start;
+}
+
+table td:nth-child(2n) {
+    background-color: #f1c40f;
+}
+
+table td:nth-child(3n) {
+    background-color: #e74c3c;
+}
+
+table td:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+@keyframes table-appear {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
